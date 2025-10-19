@@ -7,7 +7,7 @@ userName:() => cy.get('[name="login[username]"]'),
 passWord:() => cy.get('[name="login[password]"]'),
 signInBtn:() => cy.get('[class="action login primary"]'),
 title:() => cy.title(),
-errorMsg:() => cy.get('.message-error')
+errorMsg:() => cy.get('[data-bind="html: $parent.prepareMessageForHtml(message.text)"]')
 }
 
 

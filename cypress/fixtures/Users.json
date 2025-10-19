@@ -1,0 +1,24 @@
+{
+
+    "validUser":{
+
+        "name": "alenpaul490@example.com",
+        "password":"Test123456#"
+
+
+
+
+    },
+
+    "invalidUser":{
+
+          "name": "alenpaul490@example.com",
+          "password":"Test123456"
+
+
+
+    }
+
+
+
+}

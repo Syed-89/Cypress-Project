@@ -1,6 +1,20 @@
+import Login from "../Pages/LoginPage";
+const cypress = require("cypress");
+const login = new Login();
 
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    return false
+
+  Cypress.commands.add('login',(userName, password)=>{
+
+    login.clickSignIn()
+    login.dologin(userName,password )
+    login.clickSignButton()
   })
+
+    
+
+
+
+
+
+
+  

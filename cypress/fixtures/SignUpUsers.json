@@ -1,0 +1,32 @@
+{
+
+    "newUser":{
+
+        "firstName": "Test",
+        "lastName":"user",
+        "email":"testuser1234578@gmail.com",
+        "passWord":"%A12345678%",
+        "confirmPassWord":"%A12345678%"
+
+
+
+
+
+    },
+
+    "existingUser":{
+
+        
+        "firstName": "Test",
+        "lastName":"user",
+        "email":"testuser123457@gmail.com",
+        "passWord":"%A12345678%",
+        "confirmPassWord":"%A12345678%"
+
+
+
+    }
+
+
+
+}

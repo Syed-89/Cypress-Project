@@ -70,13 +70,6 @@ this.elements.createAnAccountBtn().click()
 
 }
 
-getSuccessMsg(msg){
-
-this.elements.successMsg().should('have.text', msg)
-
-
-}
-
 createAnAccount(fname, lname, emailID, pass, confirmpass){
 
     this.clickOnCreateAnAccountLink()
@@ -89,15 +82,6 @@ createAnAccount(fname, lname, emailID, pass, confirmpass){
 
 }
 
-mandatoryFieldValidation(errorMsg){
-
-this.elements.firstNameError().should('have.text', errorMsg)
-this.elements.lastNameError().should('have.text', errorMsg)
-this.elements.emailAddressError().should('have.text',errorMsg)
-this.elements.passwordError().should('have.text',errorMsg)
-this.elements.passwordConfirmationError().should('have.text', errorMsg)
-
-}
 
 }
 

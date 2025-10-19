@@ -12,19 +12,41 @@ addressBook:() =>cy.get('ul.nav.items>li:nth-of-type(6)'),
 accountInformation:() =>cy.get('ul.nav.items>li:nth-of-type(7)'),
 storedPaymentMethods:() =>cy.get('ul.nav.items>li:nth-of-type(8)'),
 myProductReview:() =>cy.get('ul.nav.items>li:nth-of-type(10)'),
-newsLetterSubscriptions:() =>cy.get('ul.nav.items>li:nth-of-type(11)')
+Editbtn:()=>cy.get('[class="action edit"]').first(),
+firstName:() =>cy.get('[name="firstname"]'),
+lastName:() =>cy.get('[name="lastname"]'),
+saveBtn:() =>cy.get('[title="Save"]'),
+errorMsg:() => cy.get('[data-bind="html: $parent.prepareMessageForHtml(message.text)"]')
+
 
 }
 
 clickOnMyAccountlink(){
 
-    cy.wait(3000)
+    cy.wait(2000)
     this.elements.customerDropDown().click()
-    cy.wait(3000)
+    cy.wait(2000)
     this.elements.accountlink().click()
 }
 
 
+
+
+clickOnEditAI(){
+
+this.elements.Editbtn().click();
+
 }
 
+updateTheAccountInformation(firstName,lastName){
+
+this.elements.Editbtn().click();
+this.elements.firstName().type(firstName);
+this.elements.lastName().type(lastName);
+this.elements.saveBtn().click();
+
+}
+
+
+}
 export default Account;
